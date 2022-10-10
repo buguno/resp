@@ -3,15 +3,16 @@ module resp-api
 go 1.19
 
 require (
-	github.com/gofiber/fiber/v2 v2.38.1 // direct
-	github.com/google/uuid v1.3.0 // direct
+	github.com/gofiber/fiber/v2 v2.38.1
+	github.com/google/uuid v1.3.0
+	github.com/go-playground/validator/v10 v10.11.1
+    github.com/golang-migrate/migrate v3.5.4+incompatible
 )
 
 require (
 	github.com/andybalholm/brotli v1.0.4 // indirect
 	github.com/go-playground/locales v0.14.0 // indirect
 	github.com/go-playground/universal-translator v0.18.0 // indirect
-	github.com/go-playground/validator/v10 v10.11.1 // direct
 	github.com/klauspost/compress v1.15.0 // indirect
 	github.com/leodido/go-urn v1.2.1 // indirect
 	github.com/valyala/bytebufferpool v1.0.0 // indirect
