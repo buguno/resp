@@ -34,8 +34,8 @@ func CreateEspData(context *fiber.Ctx) error {
 
 	// Set initialized default data for esp data:
 	esp_data.Id = uuid.New()
-	esp_data.CreatedAt = time.Now()
-	esp_data.UpdatedAt = time.Now()
+	esp_data.CreatedAt = time.Now().Unix()
+	esp_data.UpdatedAt = time.Now().Unix()
 
 	// Create a new validator for a EspData model.
 	errors := utils.ValidateEspDataStruct(*esp_data)
