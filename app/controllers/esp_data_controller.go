@@ -38,7 +38,7 @@ func CreateEspData(context *fiber.Ctx) error {
 	esp_data.UpdatedAt = time.Now()
 
 	// Create a new validator for a EspData model.
-	errors := utils.ValidateStruct(*esp_data)
+	errors := utils.ValidateEspDataStruct(*esp_data)
 	if errors != nil {
 		return context.Status(fiber.StatusBadRequest).JSON(errors)
 	}
